@@ -797,7 +797,7 @@
         opacity: 0.7;
       } /* Footer */
       footer {
-        font-size: 10px;
+        font-size: 15px;
         line-height: 1.8em;
         padding: 30px 30px;
         padding-left: 30%;
@@ -3801,6 +3801,9 @@
         }
         span.tDark.tIc.tDL.bIc{
           display: none;
+        }
+        footer {
+          font-size: 12px;
         }
   
       }
