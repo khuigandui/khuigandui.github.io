@@ -36,7 +36,7 @@
       --widgetTw: 400 ; /* write 400(normal) or 700(bold) */
       --widgetTa: 25px ;
       --widgetTac: #989b9f;
-      --navW: 350px ;
+      --navW: 230px ;
       --navT: #08102b ;
       --navI: #08102b ;
       --navB: #fffdfc ;
@@ -269,69 +269,12 @@
       }
       .secIn {
         margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
+        
         max-width: var(--contentW);
       } /* Notif Section */
       
       
-      /* Fixed/Pop-up Element */
-      .fixL {
-        display: flex;
-        align-items: center;
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin-bottom: -100%;
-        z-index: 20;
-        transition: var(--trans-1);
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        visibility: hidden;
-      }
-      .fixLi,
-      .fixL .cmBri {
-        width: 100%;
-        max-width: 680px;
-        max-height: calc(100% - 60px);
-        border-radius: 12px;
-        transition: inherit;
-        z-index: 3;
-        display: flex;
-        overflow: hidden;
-        position: relative;
-        margin: 0 auto;
-        box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.05);
-      }
-      .fixLs {
-        padding: 60px 20px 20px;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        width: 100%;
-        background: var(--contentB);
-      }
-      .fixH,
-      .mnH {
-        display: flex;
-        background: inherit;
-        position: absolute;
-        top: 0;
-        
-        right: 0;
-        padding: 0 10px;
-        z-index: 2;
-      }
-      .fixH .cl {
-        padding: 0 10px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        position: relative;
-        flex-shrink: 0;
-        min-width: 40px;
-      }
+      
    
       }
       .fixT::before {
@@ -346,7 +289,7 @@
         content: attr(aria-label);
         font-size: 30px;
         margin: 0 8px;
-        opacity: 0.6;
+        opacity: 1;
       }
       .fixi:checked ~ .fixL,
       #comment:target .fixL {
@@ -412,8 +355,8 @@
         flex: 0 0 30px;
       }
       .headL .headN {
-        width: calc(100% - 30px);
-        padding: 0 0 0 5px;
+        
+        padding: 0 0 0 40px;
       }
       .headR {
         padding: 0 25px;
@@ -555,6 +498,7 @@
       /* mainNav */
       .mnBrs {
         background: var(--contentB);
+        height: 100%;
       }
       .mnBr a {
         color: inherit;
@@ -563,7 +507,7 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        padding-top: 60px;
+        padding-top: 70%;
       }
       .mnMob {
         align-self: flex-end;
@@ -586,9 +530,7 @@
         padding-bottom: 100px;
         height: 100%;
       }
-      .mnMen {
-        padding: 20px 15px;
-      }
+      
       
       .mSoc > * {
         position: relative;
@@ -642,9 +584,10 @@
       .mnMn .a {
         display: flex;
         align-items: center;
-        padding: 10px 5px;
+        padding: 10px 10px;
+        padding-right: 0;
         position: relative;
-        width: calc(100% + 10px);
+        width: auto;
         left: 0x;
         right: 0px;
         border-radius: 8px;
@@ -654,7 +597,7 @@
         padding: 10px;
       }
       .mnMn .a > * {
-        margin: 0 10px;
+        
         font-size: 20px;
       }
       .mnMn .a:hover svg:not(.d) {
@@ -679,6 +622,9 @@
         width: 14px;
         height: 14px;
       }
+      svg.line {
+        margin-right: 10px;
+    }
       .mnMn .drp.mr .a {
         font-size: 13px;
         padding-bottom: 0;
@@ -704,7 +650,7 @@
         border-radius: var(--mobBr) var(--mobBr) 0 0;
         background: var(--mobB);
         color: var(--mobT);
-        padding: 0 20px;
+        padding: 0 0;
         box-shadow: 0 -10px 25px -5px rgba(0, 0, 0, 0.1);
         z-index: 2;
         font-size: 12px;
@@ -3510,17 +3456,18 @@
           position: relative;
           border-right: var(--headerL) solid var(--contentL);
         }
-        .mnBrs > *:not(.mnMob) {
-          width: 100%;
-        }
+        
         .mnMen {
-          padding: 20px;
+          
           overflow-y: hidden;
           overflow-x: hidden;
         }
         .mnMen:hover {
           overflow-y: scroll;
         }
+        div#PageList000 {
+          height: 100%;
+      }
         .mnMob {
           position: fixed;
           width: var(--navW);
@@ -3529,6 +3476,9 @@
         .mobMn {
           display: none;
         }
+        div#nav-widget-2 {
+          margin-left: 20px;
+      }
         .bD:not(.hdMn) .navI:checked ~ .mainWrp .blogMn,
         .bD:not(.hdMn) .navI:checked ~ .mainWrp .mnMob,
         .hdMn .navI:not(:checked) ~ .mainWrp .blogMn,
@@ -3542,7 +3492,7 @@
         }
         .bD:not(.hdMn) .navI:checked ~ .mainWrp .mnMn .a,
         .hdMn .navI:not(:checked) ~ .mainWrp .mnMn .a {
-          width: 70px;
+          
           border-radius: 15px;
         }
         .bD:not(.hdMn) .navI:checked ~ .mainWrp .mnMn .drp.mr,
@@ -3575,11 +3525,11 @@
         .hdMn .navI:not(:checked) ~ .mainWrp .mnMn .n,
         .hdMn .navI:not(:checked) ~ .mainWrp .mnMn li:not(.mr) ul {
           position: absolute;
-          left: 70px;
-          top: 3px;
+          left: 90px;
+          top: 10px;
           margin: 0 5px;
           padding: 8px 10px;
-          border-radius: 5px 16px 16px 16px;
+          border-radius: 16px 16px 16px 16px;
           max-width: 160px;
           background: var(--contentB);
           color: var(--bodyC);
@@ -3597,8 +3547,8 @@
         }
         .bD:not(.hdMn) .navI:checked ~ .mainWrp .mnMn li:not(.mr):last-child ul,
         .hdMn .navI:not(:checked) ~ .mainWrp .mnMn li:not(.mr):last-child ul {
-          top: auto;
-          bottom: 3px;
+          
+          
           border-radius: 16px 16px 16px 5px;
         }
         .bD:not(.hdMn) .navI:checked ~ .mainWrp .mnMn li:not(.drp) .a:hover .n,
@@ -3691,7 +3641,7 @@
 			display: none;
 		}
       }
-      @media screen and (max-width: 896px) {
+      @media screen and (max-width: 899px) {
         /* Header */
         /* Remove this to keep header floating */
         header {
@@ -3725,7 +3675,7 @@
           height: 100%;
         }
         .mnBr {
-          width: 85%;
+          width: 220px;
           max-width: 480px;
           height: 100%;
           border-radius: 0 12px 12px 0;
@@ -3745,6 +3695,7 @@
         .mnH {
           padding: 0 15px;
         }
+        
         .mnH label {
           padding: 15px 10px;
         }
@@ -3796,7 +3747,7 @@
           max-height: 100%;
         }
       }
-      @media screen and (max-width: 900px){
+      @media screen and (max-width: 899px){
         label.tNav.tIc.bIc{
           display: none;
         }
@@ -3806,8 +3757,13 @@
         footer {
           font-size: 12px;
         }
+        li.hm{
+          width: 100%;
+          
+        }
   
       }
+    
 
       @media screen and (max-width: 500px) {
         /* Font and Blog */
@@ -4195,57 +4151,7 @@
       }
       
       /* Basic Layout */
-      @media screen and (min-width: 897px) {
-        .LS-2 header,
-        .LS-2 .tocLi::before,
-        .LS-3 header {
-          border: 0;
-        }
-        .LS-2,
-        .LS-2 .headCn,
-        .LS-2 .mnBrs,
-        .LS-3 .mnBrs,
-        .LS-3 .headL {
-          background: #fafafc;
-        }
-        .LS-2 .blogCont::before {
-          border: 0;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          height: 100%;
-          z-index: -1;
-          background: var(--contentB);
-          border-radius: 15px 0 0 0;
-        }
-        .LS-3 .headCn {
-          background: transparent;
-        }
-        .LS-3 .headR {
-          background: var(--headerB);
-        }
-        .LS-3 .blogCont::before {
-          z-index: 10;
-        }
-        .LS-3 .blogMn {
-          z-index: 11;
-        }
-        .LS-3 .tocL {
-          top: var(--headerHi);
-          z-index: 10;
-        }
-        .LS-3 .tocI:checked ~ .tocL {
-          z-index: 10;
-        }
-        .LS-3:not(.hdMn) .navI:checked ~ .mainWrp .headN,
-        .LS-3.hdMn .navI:not(:checked) ~ .mainWrp .headN {
-          display: none;
-        }
-        .LS-3:not(.hdMn) .navI:checked ~ .mainWrp .headL,
-        .LS-3 .navI:not(:checked) ~ .mainWrp .headL {
-          width: 75px;
-        }
-      }
+      
 
      
       .drK .tDL .d2 {
@@ -4470,7 +4376,7 @@
         background: var(--contentL);
         color: var(--bodyCa);
       }
-      @media screen and (min-width: 897px) {
+      @media screen and (min-width: 900px) {
        
         .drK.bD:not(.hdMn) .navI:checked ~ .mainWrp .mnMn .n,
         .drK.bD:not(.hdMn) .navI:checked ~ .mainWrp .mnMn li:not(.mr) ul,
