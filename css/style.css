@@ -340,7 +340,7 @@
       .blogCont {
         flex-grow: 1;
         padding:0;
-        top: 0;
+        top: 80px;
         position: relative;
         transition: var(--trans-1);
       }
