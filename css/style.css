@@ -318,7 +318,7 @@
         background: inherit;
         position: absolute;
         top: 0;
-        left: 0;
+        
         right: 0;
         padding: 0 10px;
         z-index: 2;
@@ -584,6 +584,7 @@
       }
       .mnMob:not(.no-items) + .mnMen {
         padding-bottom: 100px;
+        height: 100%;
       }
       .mnMen {
         padding: 20px 15px;
