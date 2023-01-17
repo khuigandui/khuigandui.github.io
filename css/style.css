@@ -214,7 +214,7 @@
         stroke: var(--iconC);
         stroke-linecap: round;
         stroke-linejoin: round;
-        stroke-width: 1;
+        stroke-width: 2;
       }
       svg.c-1 {
         fill: var(--iconCa);
