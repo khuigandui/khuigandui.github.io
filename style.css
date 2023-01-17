@@ -630,7 +630,7 @@
         line-height: 1.8em;
         padding: 30px 30px;
         padding-left: 30%;
-        border-top: var(--fotL) solid var(--contentL);
+        
         color: var(--fotT);
         background: var(--fotB);
       }
@@ -746,6 +746,7 @@
         }
         .blogCont {
           width: calc(100% - var(--navW));
+          top: 0;
         }
         .blogCont .secIn {
           padding-left: 25px;
