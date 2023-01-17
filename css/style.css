@@ -237,7 +237,7 @@
       
       
    
-      }
+      
       .fixT::before {
         content: attr(data-text);
         flex-grow: 1;
