@@ -707,7 +707,9 @@ opacity:0
       font-size: 150%;
     }
     
-    
+    span a{
+      width: 120px;
+    }
 
 
     .mainIn,
@@ -918,21 +920,21 @@ opacity:0
   .mnMn ul li > *,
   .mnMn .a {
     
-    width: 165px;
+    width: 175px;
     
   }
     
     .mnBrs {
-      width: 210px;
+      width: 190px;
       border-radius: 0 20px 20px 0;
       z-index: 3;
       overflow: hidden;
       position: relative;
-      padding-left: 20px;
+      padding-left: 5px;
       margin-top: 70%;
-      height: 360px;
-      font-size: 5%;
-      font-weight: bold;
+      height: 320px;
+      font-size: 1%;
+      font-weight: bolder;
       opacity: 0.9;
       transition: 0.1s;
       
