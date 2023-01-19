@@ -162,8 +162,9 @@
     display: block;
     position: relative;
     max-width: 100%;
+    max-height: 80%;
     height: auto;
-margin: auto;
+    margin: auto;
   }
   svg {
     width: 40px;
@@ -306,12 +307,12 @@ header label{
   }
   .isDrk {
     position: relative;
-    right: 8%;
+    right: 3%;
 }
  
   header svg {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 60px;
     fill: var(--headerI);
     opacity: 1;
     cursor: pointer;
@@ -324,7 +325,7 @@ header label{
     position: relative;
     width: 60px;
     height: 60px;
-    left: 30px;
+    
     justify-content: center;
   }
   .tIc::after {
@@ -357,7 +358,7 @@ header label{
   .blogCont  .widget:not(:first-child),
   .blogCont .section.mobMn {
     margin-top: 0;
-    padding-bottom: 10px;
+    
   }
 
   
@@ -387,6 +388,7 @@ header label{
   .mnBrs {
     background: var(--contentB);
     height: 100%;
+    bottom: 100px;
   }
   .mnBrs a {
     color: inherit;
@@ -395,7 +397,7 @@ header label{
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-top: 150px;
+    
   }
   .mnMob {
     align-self: flex-end;
@@ -444,13 +446,16 @@ header label{
   header label svg{
     width: 50px;
     height: 50px;
-    padding: 5px;
+    
+  }
+  .tNav.tIc.bIc {
+    left: 3%;
   }
 
 
   
   .isDrk span:hover, header label, header label{
-    border-radius: 20%;
+    border-radius: 30%;
   }
   .isDrk span svg:hover, header label svg:hover{
     stroke: white;
@@ -486,8 +491,8 @@ header label{
   .mnMn .a {
     display: flex;
     align-items: center;
-    padding: 10px 10px;
-    padding-right: 0;
+    padding: 10px;
+    
     position: relative;
     width: auto;
     left: 0x;
@@ -495,9 +500,7 @@ header label{
     border-radius: 8px;
     transition: var(--trans-1);
   }
-  .mnMn ul li > * {
-    padding: 10px;
-  }
+  
   .mnMn .a > * {
     
     font-size: 20px;
@@ -519,14 +522,13 @@ header label{
   }
   .mnMn svg {
     flex-shrink: 0;
+    
   }
   .mnMn svg.d {
     width: 14px;
     height: 14px;
   }
-  svg.line {
-    margin-right: 10px;
-}
+  
   .mnMn .drp.mr .a {
     font-size: 13px;
     padding-bottom: 0;
@@ -700,7 +702,7 @@ opacity:0
   /* Responsive */
   @media screen and (min-width: 900px) {
     .headtitle{
-      padding-left: 5%;
+      
       font-size: 150%;
     }
     
@@ -730,7 +732,7 @@ opacity:0
     position: fixed;
     top: 80px;
     height: 100%;
-   
+    left: 40px;
     border-right-color: 10px solid black;
 }
     
@@ -770,11 +772,11 @@ opacity:0
     
     .mnBrs {
       display: flex;
-      height: 100%;
+      
       font-size: 15px;
       font-weight: bold;
       position: relative;
-      left: 20px;
+      align-items: center;
       
     }
     
@@ -834,7 +836,7 @@ opacity:0
     .hdMn .navI:not(:checked) ~ .mainWrp .mnMn li:not(.mr) ul {
       position: absolute;
       left: 60px;
-      top: 10px;
+      
       margin: 0 5px;
       padding: 8px 10px;
       border-radius: 16px 16px 16px 16px;
@@ -914,33 +916,42 @@ opacity:0
       height: 100%;
           
     }
+
+    .mnMn svg {
     
-  .mnMn ul li > *,
-  .mnMn .a {
+      padding-right: 10px;
+    }
+
+   
+    
+    .mnMn ul li > *,
+    .mnMn .a {
         width: 175px;
+        padding: 10px;
       }
+    
     .swiper-pagination{
       display: none;
     }
     .mnBrs {
-      width: 190px;
+      width: 200px;
       border-radius: 0 20px 20px 0;
       z-index: 3;
       overflow: hidden;
-      position: relative;
-      padding-left: 5px;
-      margin-top: 70%;
+      position: absolute;
+     
       height: 320px;
-      font-size: 1%;
+      
       font-weight: bolder;
-      opacity: 0.9;
-      transition: 0.1s;
+      opacity: 1;
+      top: 25%;
       
     }
    
     .mnBrs ul{
       
       padding-top: 10px;
+      padding-left: 10px;
     }
     
     
@@ -953,6 +964,14 @@ opacity:0
     
     .navI:checked ~ .mainWrp .blogMn {
       margin-left: 0;
+    }
+
+    .blogItm.mainbar {
+      padding-top: 40px;
+    }
+
+    .HTML img{
+      height: 50%;
     }
     /* Article */
     .onIndx.onHm .blogPts > * {
@@ -1014,6 +1033,7 @@ opacity:0
       -webkit-backdrop-filter: saturate(180%) blur(10px);
       backdrop-filter: saturate(180%) blur(10px);
   }
+  
 
   }
 
@@ -1683,7 +1703,7 @@ opacity:0
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    
+    padding: 10px;
     list-style: none;
        z-index: 1;
 }
@@ -1732,7 +1752,7 @@ opacity:0
 
 
 .swiper-pagination {
-    position: absolute;
+   
     text-align: center;
     transition: 0.3s opacity;
     transform: translate3d(0, 0, 0);
