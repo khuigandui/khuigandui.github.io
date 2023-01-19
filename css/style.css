@@ -72,7 +72,9 @@
   --darkBs: #020202 ;
   }
 
-  
+  img{
+    pointer-events: none;
+  }
   
   @font-face {
     font-family: "Noto Sans";
@@ -922,7 +924,9 @@ opacity:0
     width: 175px;
     
   }
-    
+    .swiper-pagination{
+      display: none;
+    }
     .mnBrs {
       width: 190px;
       border-radius: 0 20px 20px 0;
