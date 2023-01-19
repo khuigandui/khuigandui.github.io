@@ -21,7 +21,7 @@
     <meta content="true" name="apple-mobile-web-app-capable" />
 
     <!--[ CSS stylesheet ]-->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <!--[ <body> open ]-->
   <body class="oneGrd MN-2 mobS hdMn bD onIndx onHm" id="mainCont">
@@ -180,7 +180,7 @@
               <div class="section" id="horizontal-ad">
                 <div class="widget HTML" data-version="2" id="HTML91">
                   <img
-                    src="/gallery-bg.webp"
+                    src="/img/gallery-bg.webp"
                     alt="Backgroud Image"
                     style="object-fit: scale-down"
                   />
@@ -189,7 +189,116 @@
             </div>
             <div class="blogM">
               <!--[ Main content ]-->
-              <div class="blogItm mainbar" style="text-align: center"></div>
+              <div class="blogItm mainbar" style="text-align: center">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="/img/img1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img5.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img6.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img7.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img8.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img9.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img10.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img11.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img12.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img13.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img14.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img15.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img16.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img17.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img18.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img19.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img20.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img21.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img22.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img23.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img24.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img25.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img26.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img27.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img28.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img29.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img30.jpg" />
+                    </div>
+
+                    <div class="swiper-slide">
+                      <img src="/img/img31.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img32.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img33.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/img/img42.jpg" />
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <!--[ Footer section ]-->
@@ -291,8 +400,38 @@
       </div>
     </div>
   </body>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
   <script>
-    /*<![CDATA[*/ localStorage.getItem("mode") === "darkmode"
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 30,
+        stretch: 60,
+        depth: 80,
+        modifier: 1,
+        slideShadows: true,
+      },
+      autoplay: {
+        delay: 1800,
+        disableOnInteraction: false,
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+    /*<![CDATA[*/
+    localStorage.getItem("mode") === "darkmode"
       ? document.querySelector("#mainCont").classList.add("drK")
       : document.querySelector("#mainCont").classList.remove("drK"); /*]]>*/
     localStorage.getItem("mode") === "darkmode"
@@ -307,17 +446,5 @@
           ? document.querySelector("#mainCont").classList.add("drK")
           : document.querySelector("#mainCont").classList.remove("drK");
     }
-    function headScroll() {
-      const distanceY =
-          window.pageYOffset || document.documentElement.scrollTop,
-        shrinkOn = 40,
-        commentEl = document.getElementById("header");
-      if (distanceY > shrinkOn) {
-        commentEl.classList.add("stick");
-      } else {
-        commentEl.classList.remove("stick");
-      }
-    }
-    window.addEventListener("scroll", headScroll);
   </script>
 </html>
