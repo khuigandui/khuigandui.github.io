@@ -709,7 +709,17 @@ opacity:0
     span a{
       width: 120px;
     }
-
+    
+      .swiper{
+        width: 80%;
+      }
+      
+      .swiper-slide {
+          width: 70%;
+          max-width: 250px;
+        }  
+          
+      
    
 
     .mainIn,
@@ -985,6 +995,52 @@ opacity:0
     .mobMn:not(.no-items) + footer {
       padding-bottom: calc(55px + 30px);
     }
+
+  
+    .swiper {
+        padding-top: 30px;
+    }
+    
+    .swiper {
+        
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        max-width: 250px;
+      }
+
+    .swiper-slide img {
+      width: 100%;
+    }
+   
+      label.tNav.tIc.bIc{
+        display: none;
+      }
+      span.tDark.tIc.tDL.bIc{
+        display: none;
+      }
+      footer {
+        font-size: 12px;
+      }
+      li.hm{
+        width: 100%;
+        
+      }
+      .navI:checked ~ .mainWrp .blogMn .fCls {
+        opacity: 1;
+        visibility: visible;
+        background: rgba(0,0,0,.2);
+        -webkit-backdrop-filter: saturate(180%) blur(10px);
+        backdrop-filter: saturate(180%) blur(10px);
+    }
+    
+  
+    
+  
   }
   @media screen and (max-width: 700px) {
     .blogM {
@@ -1012,31 +1068,10 @@ opacity:0
       height: 100%;
       max-height: 100%;
     }
-  }
-  @media screen and (max-width: 899px){
-    label.tNav.tIc.bIc{
-      display: none;
-    }
-    span.tDark.tIc.tDL.bIc{
-      display: none;
-    }
-    footer {
-      font-size: 12px;
-    }
-    li.hm{
-      width: 100%;
-      
-    }
-    .navI:checked ~ .mainWrp .blogMn .fCls {
-      opacity: 1;
-      visibility: visible;
-      background: rgba(0,0,0,.2);
-      -webkit-backdrop-filter: saturate(180%) blur(10px);
-      backdrop-filter: saturate(180%) blur(10px);
-  }
-  
+    
 
   }
+
 
 
   @media screen and (max-width: 500px) {
@@ -1623,47 +1658,12 @@ opacity:0
       border-color: rgba(255, 255, 255, 0.15);
     }
   }
-  @media screen and (max-width: 500px) {
-    .drK .itemFt .itm .iCtnt {
-      background: var(--darkBa);
-    }
-  }
+ 
   
 
-  /* Swipper Slider  */
-  @media screen and (max-width: 899px) {
-    .swiper {
-        padding-top: 30px;
-    }
-    
-    .swiper {
-        
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
 
-      .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        max-width: 250px;
-      }
 
-    .swiper-slide img {
-      width: 100%;
-    }
-  }
 
-  @media screen and (min-width: 900px){
-    .swiper{
-      width: 80%;
-    }
-    
-    .swiper-slide {
-        width: 70%;
-        max-width: 250px;
-      }  
-        
-    }
     
     html,
     body {
