@@ -1645,27 +1645,22 @@ opacity:0
       .swiper-slide {
         background-position: center;
         background-size: cover;
-        
         max-width: 250px;
       }
 
     .swiper-slide img {
-      
       width: 100%;
     }
   }
 
   @media screen and (min-width: 900px){
     .swiper{
-        
-        width: 80%;
-        
+      width: 80%;
     }
     
     .swiper-slide {
-        width: 20%;
+        width: 70%;
         max-width: 250px;
-        
       }  
         
     }
