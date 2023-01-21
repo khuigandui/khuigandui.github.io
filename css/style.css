@@ -220,6 +220,7 @@
     overflow-x: hidden;
   }
   body {
+    overflow: hidden;
     position: relative;
     margin: 0;
     padding: 0 !important;
@@ -911,6 +912,9 @@ opacity:0
  
   @media screen and (max-width: 899px) {
     
+    footer {
+      display: none;
+    }
     
     /* mainNav */
     .blogMn {
@@ -1037,9 +1041,6 @@ opacity:0
         -webkit-backdrop-filter: saturate(180%) blur(10px);
         backdrop-filter: saturate(180%) blur(10px);
     }
-    
-  
-    
   
   }
   @media screen and (max-width: 700px) {
@@ -1054,129 +1055,9 @@ opacity:0
     /* Header */
     .headCn {
       height: var(--headerHm);
-    } /* Pop-up */
-    .fixL {
-      align-items: flex-end;
-    }
-    .fixL .fixLi,
-    .fixL .cmBri {
-      border-radius: 12px 12px 0 0;
-      max-width: 680px;
-    }
-    .fixL .cmBri:not(.mty) {
-      border-radius: 0;
-      height: 100%;
-      max-height: 100%;
-    }
+    } 
     
 
-  }
-
-
-
-  @media screen and (max-width: 500px) {
-    /* Font and Blog */
-    .iFxd,
-    .crdtIn {
-      font-size: 12px;
-    }
-    .brdCmb {
-      font-size: 13px;
-    }
-    .pDesc {
-      font-size: 14px;
-    }
-    .pEnt {
-      font-size: var(--postFm);
-    }
-    .pTtl.itm {
-      font-size: var(--postTm);
-    }
-    .pInf.ps .pTtmp::after {
-      content: attr(data-time);
-    }
-    .pInf.ps .pDr {
-      font-size: 12px;
-    } /* Article */
-    .onIndx:not(.oneGrd) .blogPts {
-      width: calc(100% + 15px);
-      left: -7.5px;
-      right: -7.5px;
-    }
-    .onIndx:not(.oneGrd) .blogPts > * {
-      flex: 0 0 calc(50% - 15px);
-      width: calc(50% - 15px);
-      margin-left: 7.5px;
-      margin-right: 7.5px;
-    }
-    .onIndx:not(.oneGrd) .blogPts div.ntry {
-      flex: 0 0 calc(100% - 15px);
-    }
-    .onIndx:not(.oneGrd) .ntry .pSml {
-      font-size: 12px;
-    }
-    .onIndx:not(.oneGrd) .ntry .pTtl {
-      font-size: 0.9rem;
-    }
-    .onIndx:not(.oneGrd) .ntry:not(.pTag) .pSnpt,
-    .onIndx:not(.oneGrd) .ntry .pInf:not(.nSpr) .pJmp,
-    .onIndx:not(.oneGrd) .ntry .iFxd .spnr {
-      display: none;
-    }
-    .onIndx:not(.oneGrd) .ntry .iFxd {
-      padding: 8px 3px;
-    }
-    .onIndx:not(.oneGrd) .ntry .iFxd .cmnt {
-      padding: 3px;
-    }
-    .onIndx:not(.oneGrd) .ntry .iFxd > * svg {
-      padding: 1px;
-    }
-    .onIndx.oneGrd .blogPts > * {
-      flex: 0 0 calc(100% - 20px);
-      width: calc(100% - 20px);
-    } /* Share */
-    .pShc {
-      width: calc(100% + 10px);
-      left: -5px;
-      right: -5px;
-    }
-    .pShc::before {
-      width: calc(100% - 10px);
-      margin: 0 5px 12px;
-    }
-    .pShc .wa::after,
-    .pShc .tw::after {
-      display: none;
-    } 
-    .itemFt .itm {
-      padding-bottom: 80px;
-    }
-    .itemFt .itm > * {
-      flex: 0 0 calc(100% - 20px);
-      width: calc(100% - 20px);
-    }
-    .itemFt .itm .iCtnt {
-      flex: 0 0 calc(100% - 42px);
-      width: calc(100% - 42px);
-      margin: 0 auto;
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 13px;
-      background: rgba(255, 253, 252, 0.92);
-      border-radius: 10px;
-      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
-      -webkit-backdrop-filter: saturate(180%) blur(10px);
-      backdrop-filter: saturate(180%) blur(10px);
-    }
-    .itemFt .pTtl {
-      font-size: 1rem;
-    }
-    .itemFt .pSnpt {
-      font-size: 93%;
-    }
   }
 
   /* Keyframes Animation */
@@ -1390,20 +1271,6 @@ opacity:0
     }
   }
 
-  
-
-  /* Hide Scroll */
-  .scrlH::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
-  .scrlH::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .scrlH::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
-  }
 
   
   
@@ -1659,12 +1526,6 @@ opacity:0
     }
   }
  
-  
-
-
-
-
-    
     html,
     body {
       position: relative;
