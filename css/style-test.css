@@ -68,8 +68,8 @@
     --darkTa: #ffffff ;
     --darkU: #8775f5 ;
     --darkB: #000000 ;
-    --darkBa: #080000 ;
-    --darkBs: #050000 ;
+    --darkBa: #615f5f ;
+    --darkBs: #020202 ;
     }
   
     img{
@@ -183,7 +183,7 @@
         fill: var(--iconCa);
       }
       svg.c-2 {
-        fill: red\;
+        fill: white;
         opacity: 1;
       }
     
