@@ -222,6 +222,7 @@
     }
     body {
       overflow: hidden;
+      scroll-behavior: smooth;
       position: relative;
       margin: 0;
       padding: 0 !important;
@@ -313,8 +314,7 @@
   }
    
     header svg {
-      width: 50px;
-      height: 60px;
+      width: 35px;
       fill: var(--headerI);
       opacity: 1;
       cursor: pointer;
@@ -422,11 +422,7 @@
       height: 40px;
       opacity: 1;
     }
-    header label svg{
-      width: 50px;
-      height: 50px;
-      
-    }
+   
     .tNav.tIc.bIc {
       left: 3%;
     }
