@@ -168,7 +168,7 @@
     }
     svg {
         width: 40px;
-        height: 22px;
+        
         fill: var(--iconC);
       }
       svg.line,
@@ -239,7 +239,10 @@
       max-width: var(--contentW);
     } /* Notif Section */
     
-    
+    #TextList99 {
+        
+        height: 100%;
+    }
     
   
     
@@ -554,9 +557,9 @@
         left: 2%;
         right: 2%;
         bottom: 10px;
-        
+        height: 65px;
         border-radius: 15px;
-        background: #00504E;
+        background: #009189;;
         padding: 0 0;
         color: white;
         z-index: 2;
@@ -570,7 +573,7 @@
       
     }
     .mobMn ul {
-      height: 55px;
+      height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1509,9 +1512,9 @@
       .drK.bD:not(.hdMn) .navI:checked ~ .mainWrp .mnMn li:not(.mr) ul,
       .drK.hdMn .navI:not(:checked) ~ .mainWrp .mnMn .n,
       .drK.hdMn .navI:not(:checked) ~ .mainWrp .mnMn li:not(.mr) ul {
-        background: var(--darkBa);
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-        color: var(--darkTa);
+        background: #fff;
+        box-shadow: 0 10px 40px rgba(255, 255, 255, 0.2);
+        color: #000;
       }
       .drK.LS-2 .blogCont::before {
         background: var(--darkBs);

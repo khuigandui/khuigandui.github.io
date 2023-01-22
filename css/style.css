@@ -67,7 +67,7 @@
   --darkT: #fffdfc ;
   --darkTa: #ffffff ;
   --darkU: #8775f5 ;
-  --darkB: #333232 ;
+  --darkB: #000000 ;
   --darkBa: #615f5f ;
   --darkBs: #020202 ;
   }
@@ -167,25 +167,26 @@
     margin: auto;
   }
   svg {
-    width: 40px;
-    height: 22px;
-    fill: var(--iconC);
-  }
-  svg.line,
-  svg .line {
-    fill: none !important;
-    stroke: black;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 2;
-  }
-  svg.c-1 {
-    fill: var(--iconCa);
-  }
-  svg.c-2 {
-    fill: var(--iconCs);
-    opacity: 0.4;
-  }
+      width: 40px;
+      
+      fill: var(--iconC);
+    }
+    svg.line,
+    svg .line {
+      fill: none !important;
+      stroke: black;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 2;
+    }
+    svg.c-1 {
+      fill: var(--iconCa);
+    }
+    svg.c-2 {
+      fill: white;
+      opacity: 1;
+    }
+  
   .hidden {
     display: none;
   }
@@ -238,7 +239,10 @@
     max-width: var(--contentW);
   } /* Notif Section */
   
-  
+  #TextList99 {
+      
+      height: 100%;
+  }
   
 
   
@@ -546,26 +550,30 @@ header label{
     opacity: 1;
     visibility: visible;
   } /* Mobile Menu */
+  
+
   .mobMn {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-top: 1px solid var(--mobL);
-    border-radius: var(--mobBr) var(--mobBr) 0 0;
-    background: var(--mobB);
-    color: var(--mobT);
-    padding: 0 0;
-    box-shadow: 0 -10px 25px -5px rgba(0, 0, 0, 0.1);
-    z-index: 2;
-    font-size: 12px;
+      position: fixed;
+      left: 2%;
+      right: 2%;
+      bottom: 10px;
+      height: 65px;
+      border-radius: 15px;
+      background: #009189;;
+      padding: 0 0;
+      color: white;
+      z-index: 2;
+      font-size: 12px;
   }
+
+
+
   .mobMn svg.line {
-    stroke: black;
+    stroke: rgb(255, 255, 255);
     
   }
   .mobMn ul {
-    height: 55px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1415,7 +1423,7 @@ opacity:0
     fill: var(--darkBa);
   }
   .drK .mobMn li > *:hover svg.line {
-    fill: var(--darkT) !important;
+    fill: white !important;
   }
   .drK.mobS .mobMn li > *:hover,
   .drK .button.ln {
@@ -1445,25 +1453,25 @@ opacity:0
     color: white;
   }
   .drK .mnMn .a:hover svg:not(.d) {
-    fill: var(--darkU);
+    fill: white;
   }
   .drK .mnMn .a:hover svg.line:not(.d),
   .drK .pJmp svg {
     fill: none;
-    stroke: var(--darkU);
+    stroke: white;
   }
   .drK .wL li > *:hover svg,
   .drK .wL li > div svg {
     fill: var(--darkU) !important;
-    stroke: var(--darkU);
+    stroke: white;
   }
   
   .drK.MN-3 .mobMn li > *:hover svg.line {
     stroke: var(--darkU);
-    fill: var(--darkU) !important;
+    fill: white !important;
   }
   .drK.MN-3 .mobMn li > *:hover svg .f {
-    fill: var(--darkU);
+    fill: white;
   }
   .drK .pS input[id*="1"]:checked ~ .tbHd label[for*="1"],
   .drK .pS input[id*="2"]:checked ~ .tbHd label[for*="2"],
@@ -1504,9 +1512,9 @@ opacity:0
     .drK.bD:not(.hdMn) .navI:checked ~ .mainWrp .mnMn li:not(.mr) ul,
     .drK.hdMn .navI:not(:checked) ~ .mainWrp .mnMn .n,
     .drK.hdMn .navI:not(:checked) ~ .mainWrp .mnMn li:not(.mr) ul {
-      background: var(--darkBa);
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-      color: var(--darkTa);
+      background: #fff;
+      box-shadow: 0 10px 40px rgba(255, 255, 255, 0.2);
+      color: #000;
     }
     .drK.LS-2 .blogCont::before {
       background: var(--darkBs);
