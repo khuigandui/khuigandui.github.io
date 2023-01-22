@@ -36,7 +36,7 @@
   --widgetTw: 400 ; /* write 400(normal) or 700(bold) */
   --widgetTa: 25px ;
   --widgetTac: #989b9f;
-  --navW: 230px ;
+  --navW: 190px ;
   --navT: #08102b ;
   --navI: #08102b ;
   --navB: #fffdfc ;
@@ -365,7 +365,7 @@ header label{
   .blogM {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 40px 10px;
+    padding: 20px;
   }
  
   .sidebar {
@@ -418,13 +418,12 @@ header label{
   
   .mSoc svg,
   .mnMn svg {
-    width: 40px;
-    height: 40px;
+    width: 30px;
     opacity: 1;
   }
  
   .tNav.tIc.bIc {
-    left: 3%;
+    left: 2%;
   }
 
 
@@ -632,7 +631,7 @@ header label{
  
   .copyright{
       border-top: 1px solid #0000002e;
-      height: 40px;
+      height: 50px;
       display: flex;
       justify-content: center; 
       align-items: center; 
@@ -655,9 +654,7 @@ header label{
       width: 120px;
     }
     
-      .swiper{
-        width: 80%;
-      }
+      
       
       .swiper-slide {
           width: 70%;
@@ -726,7 +723,7 @@ header label{
     .bD:not(.hdMn) .navI:checked ~ .mainWrp .mnMob,
     .hdMn .navI:not(:checked) ~ .mainWrp .blogMn,
     .hdMn .navI:not(:checked) ~ .mainWrp .mnMob {
-      width: 120px;
+      width: 90px;
       
       
     }
@@ -863,16 +860,10 @@ header label{
           
     }
 
-    .mnMn svg {
     
-      padding-right: 10px;
-    }
-
-   
     
     .mnMn ul li > *,
     .mnMn .a {
-        width: 175px;
         padding: 10px;
       }
     
@@ -880,14 +871,12 @@ header label{
       display: none;
     }
     .mnBrs {
-      width: 200px;
+      width: 175px;
       border-radius: 0 20px 20px 0;
       z-index: 3;
       overflow: hidden;
       position: absolute;
-     
-      height: 320px;
-      
+      height: 270px;
       font-weight: bolder;
       opacity: 1;
       top: 25%;
@@ -1492,8 +1481,6 @@ header label{
 }
 .swiper-wrapper {
     position: relative;
-    width: 100%;
-    height: 100%;
     z-index: 1;
     display: flex;
     transition-property: transform;
@@ -1509,7 +1496,7 @@ header label{
 
 .swiper-slide {
     flex-shrink: 0;
-    height: 100%;
+    height: 114%;
     position: relative;
     transition-property: transform;
 }
@@ -1537,6 +1524,7 @@ header label{
     transition: 0.3s opacity;
     transform: translate3d(0, 0, 0);
     z-index: 10;
+    padding-top: 10px;
 }
 .swiper-pagination.swiper-pagination-hidden {
     opacity: 0;
