@@ -231,6 +231,7 @@
     font-size: 30px;
     color: var(--bodyC);
     background: var(--bodyB);
+    -webkit-overflow-scrolling: touch;overflow-y: scroll;
     -webkit-font-smoothing: antialiased;
   }
   /* Notif Section */
