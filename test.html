@@ -81,7 +81,7 @@
 
               <ul class="mnMn" itemscope="itemscope">
                 <li class="hm">
-                  <a class="a" href="#" alt="Home">
+                  <a class="a" id="hide" href="#" alt="Home">
                     <svg class="line" viewBox="0 0 24 24">
                       <g>
                         <path
@@ -98,7 +98,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="a" href="#about" alt="About">
+                  <a class="a" href="#p" alt="About">
                     <svg class="line" viewBox="0 0 24 24">
                       <g transform="translate(2.749500, 2.549500)">
                         <path
@@ -126,7 +126,7 @@
                     href="https://www.facebook.com/khuigandui"
                     target="_blank"
                     itemprop="url"
-                    alt="Youtube"
+                    alt="Facebook"
                   >
                     <svg class="line" viewBox="2 2 20 20">
                       <g>
@@ -305,7 +305,7 @@
                 <div class="swiper-pagination"></div>
               </div>
               <div>
-                <p></p>
+                <p id="p"></p>
               </div>
             </div>
           </div>
@@ -416,6 +416,14 @@
         clickable: true,
       },
     });
+  </script>
+  <script>
+    window.addEventListener("scroll", function () {
+      document.getElementById("offNav").checked = false;
+    });
+    document.getElementById("hide").onclick = function () {
+      document.getElementById("offNav").checked = false;
+    };
   </script>
   <script>
     /*<![CDATA[*/
