@@ -167,7 +167,7 @@
       margin: auto;
     }
     svg {
-        width: 40px;
+        width: 30px;
         
         fill: var(--iconC);
       }
@@ -557,7 +557,7 @@
         left: 2%;
         right: 2%;
         bottom: 10px;
-        height: 65px;
+        height: 55px;
         border-radius: 15px;
         background: #009189;;
         padding: 0 0;
