@@ -873,7 +873,7 @@
       transform: translatey(-70px);
     
     }
-    .profile:checked + label > img
+    #slide:checked + label > img
     {
       position: absolute;
       scale: 0.6;
@@ -935,6 +935,7 @@
       align-items: center;
       transition: 0.5s;
       fill: black;
+      font-size: large;
     }
     .profile .sci li a:hover{
       color: red;
