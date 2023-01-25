@@ -882,12 +882,6 @@
     
     }
 
-
-
-
-    
- 
-
     .profile .content{
       position: relative;
       top: 55%;
@@ -922,7 +916,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: px;
+      gap: 1px;
       margin-top: 5px;
 
       
