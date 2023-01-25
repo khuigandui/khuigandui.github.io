@@ -23,12 +23,20 @@
     <!--[ CSS stylesheet ]-->
     <link rel="stylesheet" href="/css/style-test.css" />
     <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="/js/main.js"></script>
   </head>
   <!--[ <body> open ]-->
   <body class="oneGrd MN-2 mobS hdMn bD onIndx onHm" id="mainCont">
     <!--[ Active function ]-->
     <input class="navI hidden" id="offNav" type="checkbox" />
+    <input class="hide hidden" id="hide" type="checkbox" />
     <div class="mainWrp">
       <!--[ Header section ]-->
       <header class="Headsection" id="header">
@@ -98,7 +106,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="a" href="#p" alt="About">
+                  <a class="a" href="#family" alt="About">
                     <svg class="line" viewBox="0 0 24 24">
                       <g transform="translate(2.749500, 2.549500)">
                         <path
@@ -304,8 +312,84 @@
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
-              <div>
-                <p id="p"></p>
+
+              <!-- Profiles -->
+              <div id="family" class="profiles">
+                <div class="profile">
+                  <img src="/img/22.jpg" />
+                  <div class="content">
+                    <h2>
+                      Kaniamgai Rongmei <br />
+                      <span>DAD👨‍🦰</span>
+                    </h2>
+                    <ul class="sci" style="padding-left: 0">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/khuigandui/"
+                          target="_blank"
+                          ><i class="fa-brands fa-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.instagram.com/kaniamgairongmei/"
+                          target="_blank"
+                          ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.youtube.com/KaniamgaiRongmei"
+                          target="_blank"
+                          ><i class="fa-brands fa-youtube"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="profile">
+                  <img src="/img/5.jpg" />
+                  <div class="content">
+                    <h2>
+                      Sylvia Gangmei<br />
+                      <span>MOM👩‍🦳</span>
+                    </h2>
+                    <ul class="sci" style="padding-left: 0">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/lusian.gangmei.1"
+                          target="_blank"
+                          ><i class="fa-brands fa-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.instagram.com/sylvia_gangmei/"
+                          target="_blank"
+                          ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="profile">
+                  <img src="/img/8.jpg" />
+                  <div class="content">
+                    <h2>
+                      GaiChangMei (Jen Jen)<br />
+                      <span>Baby👧</span>
+                    </h2>
+                    <ul class="sci" style="padding-left: 0">
+                      <li>
+                        <a
+                          href="https://www.instagram.com/sylvia_gangmei/"
+                          target="_blank"
+                          ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -392,6 +476,7 @@
       </div>
     </div>
   </body>
+
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
@@ -421,9 +506,6 @@
     window.addEventListener("scroll", function () {
       document.getElementById("offNav").checked = false;
     });
-    document.getElementById("hide").onclick = function () {
-      document.getElementById("offNav").checked = false;
-    };
   </script>
   <script>
     /*<![CDATA[*/
