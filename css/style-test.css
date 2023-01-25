@@ -475,10 +475,7 @@
       transition: var(--trans-1);
     }
     
-    .mnMn .a > * {
-      
-      font-size: 20px;
-    }
+   
     .mnMn .a:hover svg:not(.d) {
       fill: white;
     }
@@ -656,7 +653,15 @@
         width: 120px;
       }
       
+      .swiper {
         
+        position: relative;
+        padding: 50px 0;
+        list-style: none;
+        z-index: 1;
+        background-color: #00918a46;
+      border-radius: 20px;
+      }
         
         .swiper-slide {
             width: 70%;
@@ -836,31 +841,34 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      height: 55%;
-      max-height: 900px;
-      padding: 50px 0;
+      padding: 30px 0;
+      margin: 60px 0;
+      background-color: #00918a46;
+      border-radius: 20px;
+      top: 0px;
     }
 
     
     .profile{
       position: relative;
-      width: 40vh;
-      height: 360px;
+      width: 20%;
+      
       flex-wrap: wrap;
       padding: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
-      
-      
-
-    }
-    .profile img{
-      position: absolute;
-      scale: 0.8;
       transition: 0.5s;
+      
+    }
+
+
+    .profile img{
+      position: relative;
+     transition: 0.6s;
+      max-height: 350px;
       border-radius: 20px;
-      box-shadow: 0 0 7px 5px #ff5504;
+      box-shadow: 0 0 7px 5px #f75b00;
 
     }
 
@@ -869,23 +877,15 @@
      .profile:hover img
     {
       position: absolute;
-      scale: 0.6;
-      transition: 0.5s;
-      transform: translatey(-70px);
+      scale: 0.7;
+      transform: translatey(-20%);
     
     }
-    #slide:checked + label > img
-    {
-      position: absolute;
-      scale: 0.6;
-      transition: 0.5s;
-      transform: translatey(-70px);
     
-    }
 
     .profile .content{
-      position: relative;
-      top: 55%;
+      position: absolute;
+      top: 140px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -899,10 +899,10 @@
     }
     .profile h2{
       position: relative;
-      color: black;
+      color: rgb(245, 69, 0);
       font-weight: 800;
       line-height: 1em;
-      font-size: 0.8em;
+      font-size: 1em;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       text-align: center;
@@ -912,6 +912,11 @@
       font-weight: 500;
       font-size: 0.70em;
     } 
+
+    .profile .fa-brands{
+      font-weight: 900;
+
+    }
     .profile .sci{
       position: relative;
       display: flex;
@@ -956,9 +961,13 @@
         
       }
       .blogCont {
-        padding: 60px 0;
+        padding: 25% 0;
         margin-right: 0;
         
+      }
+
+      .landing-page{
+        padding: 30px 0;
       }
       
       /* mainNav */
@@ -977,15 +986,39 @@
             
       }
   
-      .profiles {
+     
+
+      .profile{
+        position: relative;
+        width: 90%;
         
-        padding: 30px 0;
+
       }
-      .profile .content {
-        
-        top: 50%;
+     
+      .profile:hover img
+      {
+        position: relative;
+        scale: 0.7;
+        transform: translatey(-70px);
+      
+      }
+      
+  
+      .profile .content{
+        position: absolute;
+        top: 74%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.5s;
+        transform: scale(0);
         
       }
+       .profile:hover .content {
+        transform: scale(1);
+      }
+
       
       .mnMn ul li > *,
       .mnMn .a {
@@ -1044,15 +1077,12 @@
       }
   
     
-      .swiper {
-          padding-top: 30px;
+      .swiper{
+        padding: 50px 0 50px 0;
+        background-color: #00918a46;
+      border-radius: 20px;
       }
       
-      .swiper {
-          
-          padding-top: 50px;
-          padding-bottom: 50px;
-        }
   
         .swiper-slide {
           background-position: center;
@@ -1089,7 +1119,7 @@
     @media screen and (max-width: 700px) {
       
       .swiper-slide {
-        width: 55%;
+        width: 70%;
       }
     }
     @media screen and (max-width: 640px) {
@@ -1567,8 +1597,12 @@
       }
     }
    
-     
-  
+    .landing-page{
+      padding: 30px 0;
+    }
+   
+
+    
       .swiper-slide {
         background-position: center;
         background-size: cover;
@@ -1593,14 +1627,7 @@
   .drK .swiper-pagination-bullet{
     --swiper-theme-color: var(--darkT);;
   }
-  .swiper {
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      padding: 10px;
-      list-style: none;
-         z-index: 1;
-  }
+  
   .swiper-vertical > .swiper-wrapper {
       flex-direction: column;
   }

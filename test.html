@@ -36,7 +36,7 @@
   <body class="oneGrd MN-2 mobS hdMn bD onIndx onHm" id="mainCont">
     <!--[ Active function ]-->
     <input class="navI hidden" id="offNav" type="checkbox" />
-    <input class="slide hidden" id="slide" type="checkbox" />
+    <input class="hide hidden" id="hide" type="checkbox" />
     <div class="mainWrp">
       <!--[ Header section ]-->
       <header class="Headsection" id="header">
@@ -106,7 +106,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="a" href="#p" alt="About">
+                  <a class="a" href="#family" alt="About">
                     <svg class="line" viewBox="0 0 24 24">
                       <g transform="translate(2.749500, 2.549500)">
                         <path
@@ -314,30 +314,82 @@
               </div>
 
               <!-- Profiles -->
-              <div class="profiles">
-                <label class="profile" for="slide">
+              <div id="family" class="profiles">
+                <div class="profile">
                   <img src="/img/22.jpg" />
                   <div class="content">
                     <h2>
                       Kaniamgai Rongmei <br />
-                      <span>Photographer</span>
+                      <span>DAD👨‍🦰</span>
                     </h2>
                     <ul class="sci" style="padding-left: 0">
                       <li>
-                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a
+                          href="https://www.facebook.com/khuigandui/"
+                          target="_blank"
+                          ><i class="fa-brands fa-facebook"></i
+                        ></a>
                       </li>
                       <li>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a
+                          href="https://www.instagram.com/kaniamgairongmei/"
+                          target="_blank"
+                          ><i class="fa-brands fa-instagram"></i
+                        ></a>
                       </li>
                       <li>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a
+                          href="https://www.youtube.com/KaniamgaiRongmei"
+                          target="_blank"
+                          ><i class="fa-brands fa-youtube"></i
+                        ></a>
                       </li>
                     </ul>
                   </div>
-                </label>
-                <label class="profile" for="slide">
-                  <img src="/img/28.jpg" />
-                </label>
+                </div>
+                <div class="profile">
+                  <img src="/img/5.jpg" />
+                  <div class="content">
+                    <h2>
+                      Sylvia Gangmei<br />
+                      <span>MOM👩‍🦳</span>
+                    </h2>
+                    <ul class="sci" style="padding-left: 0">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/lusian.gangmei.1"
+                          target="_blank"
+                          ><i class="fa-brands fa-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.instagram.com/sylvia_gangmei/"
+                          target="_blank"
+                          ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="profile">
+                  <img src="/img/8.jpg" />
+                  <div class="content">
+                    <h2>
+                      GaiChangMei (Jen Jen)<br />
+                      <span>Baby👧</span>
+                    </h2>
+                    <ul class="sci" style="padding-left: 0">
+                      <li>
+                        <a
+                          href="https://www.instagram.com/sylvia_gangmei/"
+                          target="_blank"
+                          ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -451,13 +503,9 @@
     });
   </script>
   <script>
-    document.addEventListener("touchstart", function () {}, true);
     window.addEventListener("scroll", function () {
       document.getElementById("offNav").checked = false;
     });
-    document.getElementById("hide").onclick = function () {
-      document.getElementById("offNav").checked = false;
-    };
   </script>
   <script>
     /*<![CDATA[*/
