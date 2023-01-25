@@ -23,12 +23,20 @@
     <!--[ CSS stylesheet ]-->
     <link rel="stylesheet" href="/css/style-test.css" />
     <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="/js/main.js"></script>
   </head>
   <!--[ <body> open ]-->
   <body class="oneGrd MN-2 mobS hdMn bD onIndx onHm" id="mainCont">
     <!--[ Active function ]-->
     <input class="navI hidden" id="offNav" type="checkbox" />
+    <input class="slide hidden" id="slide" type="checkbox" />
     <div class="mainWrp">
       <!--[ Header section ]-->
       <header class="Headsection" id="header">
@@ -304,8 +312,29 @@
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
-              <div>
-                <p id="p"></p>
+
+              <!-- Profiles -->
+              <div class="profiles">
+                <label class="profile" for="slide">
+                  <img src="/img/22.jpg" />
+                  <div class="content">
+                    <h2>
+                      Kaniamgai Rongmei <br />
+                      <span>Photographer</span>
+                    </h2>
+                    <ul class="sci" style="padding-left: 0">
+                      <li>
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </label>
               </div>
             </div>
           </div>
@@ -392,6 +421,7 @@
       </div>
     </div>
   </body>
+
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
@@ -418,6 +448,7 @@
     });
   </script>
   <script>
+    document.addEventListener("touchstart", function () {}, true);
     window.addEventListener("scroll", function () {
       document.getElementById("offNav").checked = false;
     });

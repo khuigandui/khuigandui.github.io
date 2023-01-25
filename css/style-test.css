@@ -162,7 +162,7 @@
       display: block;
       position: relative;
       max-width: 100%;
-      max-height: 80%;
+      
       height: auto;
       margin: auto;
     }
@@ -352,8 +352,8 @@
     /* mainIn Section */
     .blogCont {
       flex-grow: 1;
-      padding: 90px 0;
       
+      margin-right: 95px;
       position: relative;
       transition: var(--trans-1);
     }
@@ -647,9 +647,11 @@
         
         font-size: 150%;
       }
-      .blogCont{
+      .blogCont {
         padding-bottom: 20px;
+        padding: 90px 0;
       }
+      
       span a{
         width: 120px;
       }
@@ -828,7 +830,135 @@
       
       
     }
+
+    .profiles {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 55%;
+      max-height: 900px;
+      padding: 50px 0;
+    }
+
+    
+    .profile{
+      position: relative;
+      width: 40vh;
+      height: 360px;
+      flex-wrap: wrap;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      
+
+    }
+    .profile img{
+      position: absolute;
+      scale: 0.8;
+      transition: 0.5s;
+      border-radius: 20px;
+      box-shadow: 0 0 7px 5px #ff5504;
+
+    }
+
+
+
+     .profile:hover img
+    {
+      position: absolute;
+      scale: 0.6;
+      transition: 0.5s;
+      transform: translatey(-70px);
+    
+    }
+    .profile:checked + label > img
+    {
+      position: absolute;
+      scale: 0.6;
+      transition: 0.5s;
+      transform: translatey(-70px);
+    
+    }
+
+
+
+
+
+    /* @media(hover: hover) and (pointer: fine) {
+      .profile:hover img {
+        position: absolute;
+        scale: 0.6;
+        transition: 0.5s;
+        transform: translatey(-70px);
+      }
+  } */
    
+    
+ 
+
+    .profile .content{
+      position: relative;
+      top: 55%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: 0.5s;
+      transform: scale(0);
+      
+    }
+     .profile:hover .content {
+      transform: scale(1);
+    }
+    .profile h2{
+      position: relative;
+      color: black;
+      font-weight: 800;
+      line-height: 1em;
+      font-size: 0.8em;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-align: center;
+      transform: scale(1);
+    }
+    .profile h2 span{
+      font-weight: 500;
+      font-size: 0.70em;
+    } 
+    .profile .sci{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: px;
+      margin-top: 5px;
+
+      
+    }
+    
+    .profile .sci li{
+      list-style: none;
+    }
+    .profile .sci li a{
+      position: relative;
+      color: black;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s;
+      fill: black;
+    }
+    .profile .sci li a:hover{
+      color: red;
+    }
+
+
+
+
    
     @media screen and (max-width: 899px) {
       
@@ -841,6 +971,7 @@
       }
       .blogCont {
         padding: 60px 0;
+        margin-right: 0;
         
       }
       
@@ -860,7 +991,15 @@
             
       }
   
-      
+      .profiles {
+        
+        padding: 30px 0;
+      }
+      .profile .content {
+        
+        top: 50%;
+        
+      }
       
       .mnMn ul li > *,
       .mnMn .a {
