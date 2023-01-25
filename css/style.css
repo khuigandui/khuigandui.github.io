@@ -934,20 +934,28 @@ header label{
   }
   .profile .sci li a{
     position: relative;
-    color: black;
+    color: #03704c;
     width: 30px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
-    fill: black;
+    
     font-size: large;
   }
   .profile .sci li a:hover{
-    color: red;
+    color: rgb(255, 255, 255);
   }
 
+  .drK .profile .sci li a{
+    
+    color: #ffffff;
+    
+  }
+  .drK .profile .sci li a:hover{
+    color: rgb(157, 253, 1);
+  }
 
 
 
