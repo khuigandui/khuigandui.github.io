@@ -528,7 +528,7 @@ header label{
       background: #009189;;
       padding: 0 0;
       color: white;
-      z-index: 2;
+      z-index: 5;
       font-size: 12px;
   }
 
@@ -660,8 +660,8 @@ header label{
       padding: 50px 0;
       list-style: none;
       z-index: 1;
-      background-color: #00918a46;
-    border-radius: 20px;
+      background-color: rgb(0 237 225 / 28%)  ;
+      border-radius: 30px;
     }
       
       .swiper-slide {
@@ -842,90 +842,120 @@ header label{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    padding: 60px 0;
     margin: 60px 0;
-    background-color: #00918a46;
-    border-radius: 20px;
-    top: 0px;
+    background-color: rgba(0, 237, 225, 0.28);
+    border-radius: 30px;
   }
 
-  
   .profile{
     position: relative;
-    width: 20%;
-    
-    flex-wrap: wrap;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-width: 200px;
+    min-height: 200px;
+    background: linear-gradient(315deg, #ff3300, #00856f);
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 15px 30px;
+   
+  }
+  
+  
+  .profile::before{
+    content: "";
+    position: absolute;
+    inset: 100px -10px;
+    background: linear-gradient(315deg, #00ffc8, #fffb00);
     transition: 0.5s;
+    animation: animate 3.5s linear infinite;
+   
+  }
+  .profile::after{
+    content: "";
+    inset: 5px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.89);
+    border-radius: 50%;
+    filter: blur(20px);
+  }
+
+
+  @keyframes animate {
+    0%{
+      transform: rotate(0deg)
+    }
     
-  }
+    100%{
+      transform: rotate(360deg)
 
-
-  .profile img{
-    position: relative;
-   transition: 0.6s;
-    max-height: 350px;
-    border-radius: 20px;
-    box-shadow: 0 0 7px 5px #f75b00;
-
-  }
-
-
-
-   .profile:hover img
-  {
-    position: absolute;
-    scale: 0.8;
-    transform: translatey(-20%);
-  
+    }
   }
   
-
-  .profile .content{
+ .content{
     position: absolute;
-    top: 140px;
+    inset: 5px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    transition: 0.5s;
-    transform: scale(0);
+    z-index: 3;
+    border-radius: 50%;
     
   }
-   .profile:hover .content {
-    transform: scale(1);
+
+  .content img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 50%;
+    z-index: 3;
+    
   }
-  .profile h2{
+  
+    .profile:hover .content img{
+      opacity: 0;
+    }
+  
+    .profile:hover .sci li a{
+      z-index: 3;
+    }
+
+  
+  .content h2{
     position: relative;
     color: rgb(245, 69, 0);
     font-weight: 800;
     line-height: 1em;
-    font-size: 1em;
+    font-size: 0.7em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    text-align: center;
-    transform: scale(1);
+    align-items: center;
+    top: 20px;
+    
+    
   }
-  .profile h2 span{
+  .content h2 span{
     font-weight: 500;
     font-size: 0.70em;
+    z-index: -1;
+    top: 20px;
   } 
 
-  .profile .fa-brands{
+  .content .fa-brands{
     font-weight: 900;
-
+    top: 20px;
   }
-  .profile .sci{
+  .content .sci{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1px;
     margin-top: 5px;
-
+    top: 20px;
     
   }
   
@@ -941,11 +971,11 @@ header label{
     justify-content: center;
     align-items: center;
     transition: 0.5s;
-    
+    z-index: -3;
     font-size: large;
   }
   .profile .sci li a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
   }
 
   .drK .profile .sci li a{
@@ -995,40 +1025,8 @@ header label{
           
     }
 
-   
-
-    .profile{
-      position: relative;
-      width: 55%;
-      padding: 0 0 30px 0;
-      
-
-    }
-   
-    .profile:hover img
-    {
-      position: relative;
-      scale: 0.7;
-      transform: translatey(-70px);
     
-    }
-    
-
-    .profile .content{
-      position: absolute;
-      top: 65%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      transition: 0.5s;
-      transform: scale(0);
-      
-    }
-     .profile:hover .content {
-      transform: scale(1);
-    }
-
+ 
     
     .mnMn ul li > *,
     .mnMn .a {
@@ -1089,8 +1087,9 @@ header label{
   
     .swiper{
       padding: 50px 0 40px 0;
-      background-color: #00918a46;
-    border-radius: 20px;
+      background-color: rgba(0, 237, 225, 0.28);
+      border-radius: 30px;
+    
     }
     
 
