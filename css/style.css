@@ -67,7 +67,7 @@
   --darkT: #fffdfc ;
   --darkTa: #ffffff ;
   --darkU: #8775f5 ;
-  --darkB: #000000 ;
+  --darkB: #000000e0 ;
   --darkBa: #615f5f ;
   --darkBs: #020202 ;
   }
@@ -174,7 +174,7 @@
     svg.line,
     svg .line {
       fill: none !important;
-      stroke: black;
+      stroke: white;
       stroke-linecap: round;
       stroke-linejoin: round;
       stroke-width: 2;
@@ -282,14 +282,11 @@
     z-index: 10;
     position: fixed;
     display: flex;
-    background-color: white;
+    background-color: black;
     align-items: center;
-    border-bottom: 1px solid #0000002e;
+    box-shadow: 0 7px 5px #047ffd73;
 
   }
-header label{
-  cursor: pointer;
-}
 
   .headsection{
     width: 100%;
@@ -305,9 +302,67 @@ header label{
     text-align: center;
     font-weight: bold;
     font-size: 120%;
-    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
     
   }
+  
+  @property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  .logo::before {
+    content: "";
+    width: 220px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+       
+    animation: spin 6s linear infinite;
+}
+
+  
+.logo {
+  background: rgb(60 29 2 / 65%);
+  width: 200px;
+  height: 50px;
+  padding: 3px;
+  position: relative;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.logo h1{
+  color: white;
+}
+
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+
+
+
   .isDrk {
     position: relative;
     right: 3%;
@@ -1004,7 +1059,7 @@ header label{
   @media screen and (max-width: 899px) {
     
       header {
-          height: 55px;
+          height: 65px;
       }
     footer {
       bottom: 20px;
