@@ -839,10 +839,7 @@ header label{
     
   }
 
-  .swiper-slide-active img{
-      border-radius: 20px;
-      box-shadow: 0 0 7px 5px #ff5504;
-  }
+ 
     
    
 
@@ -861,30 +858,30 @@ header label{
     position: relative;
     min-width: 200px;
     min-height: 200px;
-    background: linear-gradient(315deg, #ffffff, #ffffff);
+    background: linear-gradient(315deg,  #fbff00, #00e1ff 43%, #ff004c);
     overflow: hidden;
     border-radius: 50%;
     margin: 15px 30px;
-   
+    
   }
   
   
   .profile::before{
     content: "";
     position: absolute;
-    inset: 70px -10px;
-    background: linear-gradient(315deg, #ff0000, #00fa15);
+    inset: -10px 20px;
+    background: linear-gradient(315deg,  #fbff00, #00e1ff 43%, #ff004c);
     transition: 0.5s;
-    animation: animate 3.5s linear infinite;
-   
+    animation: animate 6s linear infinite;
+   filter: blur(10px);
   }
   .profile::after{
     content: "";
-    inset: 5px;
+    inset: 15px;
     position: absolute;
     background: #191c29;
     border-radius: 50%;
-  
+    filter: blur(15px);
   } 
 
 
@@ -899,43 +896,11 @@ header label{
     }
   }
 
-  /* .profile::before,
-.profile::after {
-    content: "";
-    position: absolute;
-    left: -1vh;
-    top: -1vh;
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,$secondary-color), color-stop(40%,$accent-color), color-stop(100%,#05abe0));
-    
-    border-radius: 100px;
-    background-size: 300%;
-    width: calc(100% + 2vh);
-    height: calc(100% +  2vh);
-   
   
-    animation: cycle 20s linear infinite;
-}
-
-.profile::after {
-  filter: blur(2vh);
-}
-@keyframes cycle {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 300% 0;
-
-  }
-  100% {
-    background-position: 0 0;
-  }
-} */
-
   
  .content{
     position: absolute;
-    inset: 5px;
+    inset: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -972,9 +937,7 @@ header label{
     color: rgb(88 199 250 / 100%);
     font-family: sans-serif;
     font-weight: bold;
-  
-    font-size: 1em;
-    
+    font-size: 0.8em;
     align-items: center;
     top: 20px;
     
@@ -1007,7 +970,7 @@ header label{
   }
   .profile .sci li a{
     position: relative;
-    color: rgb(88 199 250 / 100%);
+    color: rgb(255, 123, 0);
     width: 30px;
     height: 30px;
     display: flex;
@@ -1023,12 +986,12 @@ header label{
 
   .drK .profile .sci li a{
     
-    color: #03704c;
+    color: rgb(255, 123, 0);
     
   }
   .drK .profile h2{
     
-    color: rgb(255, 0, 0);;
+    color: rgb(88 199 250 / 100%);
     
   }
   .drK .profile .sci li a:hover{
@@ -1670,10 +1633,15 @@ header label{
     .swiper-slide img {
         display: block;
         width: 100%;
-        border-radius: 20px;
-        /* box-shadow: 0 0 7px 5px #ff5504; */
+        border-radius: 30px;
+        
     }
-
+    .swiper-slide-active img{
+      border-radius: 30px;
+      box-shadow: 0 0 7px 5px #ff4800;
+      
+  }
+    
 
 :root {
     --swiper-theme-color: #000000;
