@@ -663,6 +663,8 @@ header label{
       background-color: rgb(0 237 225 / 28%)  ;
       border-radius: 30px;
     }
+
+    
       
       .swiper-slide {
           width: 70%;
@@ -837,156 +839,7 @@ header label{
     
   }
 
-  .profiles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 0;
-    margin: 60px 0;
-    background-color: rgba(0, 237, 225, 0.28);
-    border-radius: 30px;
-  }
-
-  .profile{
-    position: relative;
-    min-width: 200px;
-    min-height: 200px;
-    background: linear-gradient(315deg, #ff3300, #00856f);
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 15px 30px;
-   
-  }
-  
-  
-  .profile::before{
-    content: "";
-    position: absolute;
-    inset: 100px -10px;
-    background: linear-gradient(315deg, #00ffc8, #fffb00);
-    transition: 0.5s;
-    animation: animate 3.5s linear infinite;
-   
-  }
-  .profile::after{
-    content: "";
-    inset: 5px;
-    position: absolute;
-    background: rgba(255, 255, 255, 0.89);
-    border-radius: 50%;
-    filter: blur(20px);
-  }
-
-
-  @keyframes animate {
-    0%{
-      transform: rotate(0deg)
-    }
-    
-    100%{
-      transform: rotate(360deg)
-
-    }
-  }
-  
- .content{
-    position: absolute;
-    inset: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 3;
-    border-radius: 50%;
-    
-  }
-
-  .content img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.5s;
-    border-radius: 50%;
-    z-index: 3;
-    
-  }
-  
-    .profile:hover .content img{
-      opacity: 0;
-    }
-  
-    .profile:hover .sci li a{
-      z-index: 3;
-    }
-
-  
-  .content h2{
-    position: relative;
-    color: rgb(245, 69, 0);
-    font-weight: 800;
-    line-height: 1em;
-    font-size: 0.7em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    align-items: center;
-    top: 20px;
-    
-    
-  }
-  .content h2 span{
-    font-weight: 500;
-    font-size: 0.70em;
-    z-index: -1;
-    top: 20px;
-  } 
-
-  .content .fa-brands{
-    font-weight: 900;
-    top: 20px;
-  }
-  .content .sci{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1px;
-    margin-top: 5px;
-    top: 20px;
-    
-  }
-  
-  .profile .sci li{
-    list-style: none;
-  }
-  .profile .sci li a{
-    position: relative;
-    color: #03704c;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    z-index: -3;
-    font-size: large;
-  }
-  .profile .sci li a:hover{
-    color: rgb(255, 0, 0);
-  }
-
-  .drK .profile .sci li a{
-    
-    color: #ffffff;
-    
-  }
-  .drK .profile .sci li a:hover{
-    color: rgb(157, 253, 1);
-  }
-
+ 
 
 
  
@@ -1623,7 +1476,7 @@ header label{
         display: block;
         width: 100%;
         border-radius: 20px;
-        box-shadow: 0 0 7px 5px #ff5504;
+        /* box-shadow: 0 0 7px 5px #ff5504; */
     }
 
 
@@ -1764,3 +1617,276 @@ button.swiper-pagination-bullet {
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
 }
+
+
+
+
+.profile1 {
+  
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+ 
+}
+
+
+
+
+.profiles {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+padding: 60px 0;
+margin: 60px 0;
+background-color: #191c29;
+border-radius: 30px;
+backdrop-filter: blur(2px);
+
+}
+
+/* .profile{
+position: relative;
+min-width: 200px;
+min-height: 200px;
+background: linear-gradient(315deg, #ffffff, #ffffff);
+overflow: hidden;
+border-radius: 50%;
+margin: 15px 30px;
+
+}
+
+
+.profile::before{
+content: "";
+position: absolute;
+inset: 70px -10px;
+background: linear-gradient(315deg, #ff0000, #00fa15);
+transition: 0.5s;
+animation: animate 3.5s linear infinite;
+
+}
+.profile::after{
+content: "";
+inset: 5px;
+position: absolute;
+background: #191c29;
+border-radius: 50%;
+
+} 
+
+
+@keyframes animate {
+0%{
+  transform: rotate(0deg)
+}
+
+100%{
+  transform: rotate(360deg)
+
+}
+} */
+
+/* .profile::before,
+.profile::after {
+content: "";
+position: absolute;
+left: -1vh;
+top: -1vh;
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,$secondary-color), color-stop(40%,$accent-color), color-stop(100%,#05abe0));
+
+border-radius: 100px;
+background-size: 300%;
+width: calc(100% + 2vh);
+height: calc(100% +  2vh);
+
+
+animation: cycle 20s linear infinite;
+}
+
+.profile::after {
+filter: blur(2vh);
+}
+@keyframes cycle {
+0% {
+background-position: 0 0;
+}
+50% {
+background-position: 300% 0;
+
+}
+100% {
+background-position: 0 0;
+}
+} */
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+.card {
+  background: #191c29;
+  width: 200px;
+  height: 200px;
+  padding: 3px;
+  position: relative;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+  margin: 15px 30px;
+ 
+}
+
+.card:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+
+.card:hover .content img{
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.card::before {
+  content: "";
+  width: 106%;
+  height: 106%;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #fbff00, #00e1ff 43%, #ff004c);
+    position: absolute;
+    z-index: -1;
+    top: -3%;
+    left: -3%;
+    animation: spin 2.5s linear infinite;
+    
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  border-radius: 60%;
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+  z-index: -1;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+.swiper-slide-active img{
+  border-radius: 20px;
+  box-shadow: 0 0 7px 5px #ff5504;
+}
+
+
+
+.content{
+position: absolute;
+inset: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+z-index: 3;
+border-radius: 50%;
+
+}
+
+.content img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: 0.5s;
+border-radius: 50%;
+z-index: 3;
+
+}
+
+
+
+
+.content h2{
+position: relative;
+color: rgb(88 199 250 / 100%);
+font-family: sans-serif;
+font-weight: bold;
+font-size: 0.6em;
+align-items: center;
+top: 20px;
+}
+.content h2 span{
+font-weight: 500;
+font-size: 0.70em;
+top: 20px;
+} 
+
+.content .fa-brands{
+font-weight: 900;
+top: 20px;
+}
+.content .sci{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1px;
+margin-top: 5px;
+top: 20px;
+
+}
+
+.content .sci li{
+list-style: none;
+}
+.content .sci li a{
+position: relative;
+color: rgb(88 199 250 / 100%);
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.5s;
+
+font-size: large;
+}
+.content .sci li a:hover{
+color: rgb(255, 0, 0);
+}
+
+
