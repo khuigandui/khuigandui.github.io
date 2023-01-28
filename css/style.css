@@ -318,6 +318,7 @@
     inherits: false;
   }
   
+  
   .logo::before {
     content: "";
     width: 220px;
@@ -358,7 +359,9 @@
   background: linear-gradient(to right, #f32170,
                     #ff6b08, #00ffd5, #ff4800);
             -webkit-text-fill-color: transparent;
+           
             -webkit-background-clip: text;
+            background-clip: text;
 }
 
 .drK .logo h1{
@@ -366,7 +369,9 @@
   background: linear-gradient(to right, #f32170,
                     #ff6b08, #00ffd5, #ff4800);
             -webkit-text-fill-color: transparent;
+           
             -webkit-background-clip: text;
+            background-clip: text;
 }
 
 @keyframes spin {
